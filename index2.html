@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS </title>
+    <style>
+      #q1 {
+        width: 300px;
+        height: 400px;
+        background: #e9e9e9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="q1">
+      <span>My text</span>
+      <p>paragraph</p>
+    </div>
+    <div id="a1">
+      <div id="a2">
+        <p id="t1">Text t1</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // document <- window.document;
+      
+      document.getElementsByTagName('div');
+
+      document.getElementById("q1");
+      document.getElementById("q1").innerHTML = "My new text";
+      document.getElementById("q1").style.color = "#666";
+      document.getElementById("q1").attributes;
+      document.getElementById("q1").attributes['id'];
+
+      // https://developer.mozilla.org/en-US/docs/Web/API/Element
+      
+      document.getElementById("q1").innerHTML = "<p>My new text</p><b>My new text</b>";
+      document.getElementById("q1").children;
+
+      // document.querySelector('')
+
+      document.getElementById("q1").children[0].style.color = "red";
+
+
+      document.getElementById("a1");
+      document.getElementById("a1").children[0].children[0]; // p
+      document.getElementById("a1").children[0].children[0].innerHTML = "HELLO";
+
+      document.children;
+
+    </script>
+  </body>
+</html>
+
+
